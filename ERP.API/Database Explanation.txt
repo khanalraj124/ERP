@@ -1,0 +1,86 @@
+Based on the provided information, I'll provide a normalized database schema and a basic structure for the Visual Studio solution to implement the requirements.
+
+Requirement 1: Normalized Database Schema
+I would create two additional tables (Worker and Manager) to represent the common attributes of all workers and the specific attributes of managers. This helps in avoiding redundant data and adhering to normalization principles.
+//create table Supervisor
+USE [EmployeeManagementDB]
+GO
+
+/****** Object:  Table [dbo].[Employees]    Script Date: 10/13/2023 2:46:29 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].Supervisors(
+	[SupervisorID] [int] NOT NULL,
+	
+	[AnnualSalary] [decimal](10,2) NOT NULL
+) ON [PRIMARY]
+GO
+
+
+//create table Manager
+USE [EmployeeManagementDB]
+GO
+
+/****** Object:  Table [dbo].[Managers]    Script Date: 10/13/2023 4:26:23 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Managers](
+	[ManagerID] [int] NOT NULL,
+	[FirstName] [nvarchar](30) NOT NULL,
+	[LastName] [nvarchar](50) NOT NULL,
+	[Address1] [nvarchar](100) NOT NULL,
+	[AnnualSalary] [decimal](10, 2) NOT NULL
+) ON [PRIMARY]
+GO
+
+//create table Employees
+USE [EmployeeManagementDB]
+GO
+
+/****** Object:  Table [dbo].[Employees]    Script Date: 10/13/2023 4:28:18 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Employees](
+	[EmployeeID] [int] NOT NULL,
+	[FirstName] [nvarchar](30) NOT NULL,
+	[LastName] [nvarchar](50) NOT NULL,
+	[Address1] [nvarchar](100) NOT NULL,
+	[PayPerHour] [decimal](5, 2) NOT NULL
+) ON [PRIMARY]
+GO
+
+//create table Workers
+USE [EmployeeManagementDB]
+GO
+
+/****** Object:  Table [dbo].[Workers]    Script Date: 10/13/2023 4:26:54 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE TABLE [dbo].[Workers](
+	[WorkerID] [int] NOT NULL,
+	[FirstName] [nvarchar](30) NOT NULL,
+	[LastName] [nvarchar](50) NOT NULL,
+	[Address1] [nvarchar](100) NOT NULL,
+	[WorkerType] [nvarchar](30) NOT NULL
+) ON [PRIMARY]
+GO
+
+
+
