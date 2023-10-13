@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.API", "ERP.API\ERP.API.csproj", "{03CB64E4-25F0-4477-83F8-CE4B84E644BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Core", "ERP.Core\ERP.Core.csproj", "{0A15E547-3D91-4B78-9F68-12300E93F228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Infra", "ERP.Infra\ERP.Infra.csproj", "{6A95CEA9-EA32-4D42-A322-ED285877EFE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03CB64E4-25F0-4477-83F8-CE4B84E644BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03CB64E4-25F0-4477-83F8-CE4B84E644BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03CB64E4-25F0-4477-83F8-CE4B84E644BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03CB64E4-25F0-4477-83F8-CE4B84E644BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A15E547-3D91-4B78-9F68-12300E93F228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A15E547-3D91-4B78-9F68-12300E93F228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A15E547-3D91-4B78-9F68-12300E93F228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A15E547-3D91-4B78-9F68-12300E93F228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A95CEA9-EA32-4D42-A322-ED285877EFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A95CEA9-EA32-4D42-A322-ED285877EFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A95CEA9-EA32-4D42-A322-ED285877EFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A95CEA9-EA32-4D42-A322-ED285877EFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3FF72DF-1EFF-4F17-B7ED-94121E987067}
+	EndGlobalSection
+EndGlobal
